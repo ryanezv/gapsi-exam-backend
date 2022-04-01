@@ -25,12 +25,8 @@ public class SupplierEntity {
     private String name;
 
     @Column(nullable = false)
-    private String phone;
-
-    private String email;
+    private String business;
 
     @Column(nullable = false)
     private String direction;
-
-    private String description;
 }

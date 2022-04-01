@@ -1,72 +1,52 @@
 [
   {
     "name": "Supplier 01",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Ciudad de Mexico",
-    "description": "Venta de productos de limpieza"
+    "business": "Supplier S.A de C.V",
+    "direction": "Ciudad de Mexico"
   },
   {
     "name": "Supplier 02",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Morelos",
-    "description": "Venta de productos de mantenimiento"
+    "business": "Supplier S.A de C.V",
+    "direction": "Morelos"
   },
   {
     "name": "Supplier 03",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Puebla",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Puebla"
   },
   {
     "name": "Supplier 04",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Yucatan",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Yucatan"
   },
   {
     "name": "Supplier 05",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Campeche",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Campeche"
   },
   {
     "name": "Supplier 06",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Guerrero",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Guerrero"
   },
   {
     "name": "Supplier 07",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Sinaloa",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Sinaloa"
   },
   {
     "name": "Supplier 08",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Saltillo",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Saltillo"
   },
   {
     "name": "Supplier 09",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "DF",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "DF"
   },
   {
     "name": "Supplier 10",
-    "phone": "4343 5345 354",
-    "email": "supplier1@gapsi.com.mx",
-    "direction": "Campeche",
-    "description": "Venta de alimentos enlatados"
+    "business": "Supplier S.A de C.V",
+    "direction": "Campeche"
   }
 ]

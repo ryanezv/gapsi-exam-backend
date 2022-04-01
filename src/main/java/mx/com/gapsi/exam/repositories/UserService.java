@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
+/*
+* Class with pattern design singleton
+* */
 @Service
 @Scope("singleton")
 @CrossOrigin(origins = "http://localhost:8080")

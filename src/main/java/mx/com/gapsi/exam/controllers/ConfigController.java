@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:8080")
-@RequestMapping("/app")
+@RequestMapping("/api/app")
 public class ConfigController {
 
     @Autowired

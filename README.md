@@ -1,9 +1,15 @@
 ### Examen de prueba
 
+#### Clonar el repositorio de Github
+```
+git clone https://github.com/ryanezv/gapsi-exam-backend.git
+```
 ##### Ejecutar proyecto
 1. `gradle build`
 
 2. `gradle bootRun`
+
+Expuesto sobre el puerto default 8080
 
 ##### Tecnologias usadas:
 - Spring Boot (incluido Tomcat)
@@ -21,29 +27,36 @@ Los registros en la BD se cargar inicialmente desde el archivo:
 
 RECOMENDACIONES:
 
-Usar la herramieta practica para ejecutar endpoints desde terminal: `https://httpie.io/`
+- Usar la herramieta practica para ejecutar endpoints desde terminal: `https://httpie.io/`
+- Tambien agrego el postmant collection (por correo)
 
-URLs del servicio REST:
+URLs del servicio REST (con http pie):
 
 ```json
-# Obtener todos los proveedores
-http GET :8081/api/suppliers
+A continuación se agregan los comandos desde terminal con "http pie":
 
-# Obtener un proveedor
+Obtener todos los proveedores
+http GET :8081/api/suppliers
+  Ejemplos (queryparams)
+        Obtener 2 registros por pagina
+        http GET :8081/api/suppliers size==2
+        Posicionarnos en la pagina 4 (2 registro por pagina)
+        http GET :8081/api/suppliers size==2 page==4
+        
+Obtener un proveedor
 http GET :8081/api/suppliers/{id}
 
-# Eliminar un proveedor
+Eliminar un proveedor
 http DETELE :8081/api/suppliers/{id}
 
-# Alta de un proveedor
-http POST :8081/api/supplier  description={description} direction={direction} email={email} name={name} phone={phone}
+Alta de un proveedor
+http POST :8081/api/supplier name={name} business={business} direction={direction}
 Ejemplo:
-exam http POST :8081/api/supplier  description=gggg direction=gggg email=ggg name=Supplier\ 01 phone=ggg
+http POST :8081/api/supplier name=Supplier\ 20 business=SAdeCV direction=Aqui
         
-# Obtener datos del usuario/candidato
-http :8081/user
+Obtener datos del usuario/candidato
+http :8081/api/user
 
-#Obtener datos de la aplicacion
-exam http :8081/app/version
-
+Obtener datos de la aplicacion
+exam http :8081/api/app/version
 ```    
