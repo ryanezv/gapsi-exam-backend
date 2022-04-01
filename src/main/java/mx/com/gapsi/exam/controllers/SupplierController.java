@@ -5,6 +5,7 @@ import mx.com.gapsi.exam.repositories.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:8080")
@@ -25,10 +26,11 @@ public class SupplierController {
         List<SupplierEntity> suppliers = repository.findAll();
 
         // Search by suppliers duplicate, only save if not exist
-        suppliers.stream()
-                .filter(supplier -> supplier.getName().equalsIgnoreCase(entity.getName().trim()))
-                .findAny()
-                .orElse(repository.save(entity));
+        boolean duplicate = suppliers.stream()
+            .anyMatch(supplier -> supplier.getName().equalsIgnoreCase(entity.getName().trim()));
+
+        if(!duplicate)
+            repository.save(entity);
 
         return entity;
     }
