@@ -32,8 +32,8 @@ RECOMENDACIONES:
 
 URLs del servicio REST (con http pie):
 
-```json
-A continuación se agregan los comandos desde terminal con "http pie":
+```
+A continuación se agregan los comandos desde terminal con http pie:
 
 Obtener todos los proveedores
 http GET :8081/api/suppliers
